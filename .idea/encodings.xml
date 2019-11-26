@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/src/test/javatest/Demo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/Strategy.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise5/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise6/UsingMap.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise7/Demo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise7/SecretExample.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise7/hello.secret" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise7/hello.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise8/CalendarBean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise8/CalendarFrame.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise8/CalendarMainClass.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise8/ComputerFrame.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise8/MainClass.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/javatest/practise8/Teacher.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/suanfa/Demo10.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/suanfa/Demo6.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/suanfa/Demo8.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/suanfa/Demo9.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/suanfa/Time.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/surface_project/example/file_io_java/FileIOMain.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/surface_project/example/file_io_java/hw3_input.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/surface_project/example/file_io_java/hw3_output.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/surface_project/example/map_java/MapMain.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/surface_project/example/similarity_java/SimilarityMain.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

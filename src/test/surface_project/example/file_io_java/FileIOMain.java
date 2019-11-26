@@ -1,0 +1,112 @@
+package test.surface_project.example.file_io_java;
+
+import sun.misc.IOUtils;
+import sun.nio.ch.IOUtil;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+
+public class FileIOMain {
+
+	private ArrayList outputList = new ArrayList();
+	
+	FileIOMain()
+	{
+		outputList.add("17200135216");
+		outputList.add("李苗");
+		outputList.add("爬山");
+		for (int i = 0; i < 1000; i++)
+		{
+			String morning ="Good Morning";
+			outputList.add(morning + i);
+		}
+	}
+	
+	public void readFile(String file_path) throws IOException
+	{
+		File file;
+		FileReader fr;
+		BufferedReader br;
+
+		file = new File(file_path);
+		if (!file.exists()){
+			System.out.println("\""+file_path+"\" does not exsit!");
+			return;
+		}
+		
+		/*
+		1.FileReader????java.io.InputStreamReade???????????????????????????е??????????? 
+		BufferedReader??Reader???????????????????巽??????????????????????readLine??????????????????BufferedReader?????Reader?????????????????????????????????  
+		2.FileReader?????????????????BufferReader???IO??????Buffer????????????????
+		*/
+		try {
+			fr = new FileReader(file);
+			br = new BufferedReader(fr);
+			StringBuffer stringBuffer = new StringBuffer();
+			String line;
+			while (br.ready()){
+				while ((line = br.readLine()) != null) {
+					stringBuffer.append(line+"\n");
+				}
+			}
+			System.out.println(stringBuffer);
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+		/*???????д????????????????????????????????????????????????BufferedReader.ready()???????ж???????????????β*/
+//		String lineText;
+//		lineText = br.readLine();
+//		System.out.println(lineText);
+//		lineText = br.readLine();
+//		System.out.println(lineText);
+//		lineText = br.readLine();
+//		System.out.println(lineText);
+		/*???end*/
+		
+//		br.close();
+	}
+
+	public void writeFile(String file_path) throws IOException
+	{
+		File file;
+		FileWriter fw;
+		PrintWriter pw;
+
+		file = new File(file_path);
+		if (!file.exists()){
+			file.createNewFile();
+		}
+		fw = new FileWriter(file);
+		pw = new PrintWriter(fw);
+		
+		/*???????д????????????????FileIOMain.outputList?????*/
+//		String lineText;
+//		lineText = "学号:17200135216";
+//		pw.println(lineText);
+//		lineText = "姓名:李苗";
+//		pw.println(lineText);
+//		lineText = "运动:爬山";
+//		pw.println(lineText);
+		for(Object object:outputList){
+			pw.println(object);
+		}
+		/*???end*/
+		
+		pw.close();
+	}
+	
+	public static void main(String[] args) throws IOException {
+		FileIOMain io = new FileIOMain();
+		//option+command+c 快速复制文件所在路径
+		io.readFile("/Users/crystal/IdeaProjects/crystal/src/test/surface_project/example/file_io_java/hw3_input.txt");
+		io.writeFile("/Users/crystal/IdeaProjects/crystal/src/test/surface_project/example/file_io_java/hw3_output.txt");
+	}
+
+}
