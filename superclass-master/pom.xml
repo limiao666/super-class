@@ -18,7 +18,7 @@
     <properties>
         <!--<tomcat.version>7.0.69</tomcat.version>-->
         <junit.version>4.12</junit.version>
-        <mysql.version>5.1.32</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <com.alibaba.dubbo.version>2.5.3</com.alibaba.dubbo.version>
         <org.apache.zookeeper.version>3.4.6</org.apache.zookeeper.version>
     </properties>
